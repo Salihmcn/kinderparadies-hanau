@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preisübersicht – Kinderparadies Hanau e.V.</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #e8e8e8;
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+
+    .page {
+      width: 480px;
+      background: #faf8f5;
+      padding: 40px 32px 36px;
+      font-family: 'Open Sans', Arial, sans-serif;
+      color: #2d2d2d;
+      position: relative;
+      border-radius: 12px;
+    }
+
+    /* Deko-Punkte */
+    .page::before, .page::after {
+      content: '';
+      position: absolute;
+      border-radius: 50%;
+    }
+    .page::before {
+      width: 18px; height: 18px;
+      background: #f5c9a8;
+      top: 20px; right: 30px;
+    }
+    .page::after {
+      width: 12px; height: 12px;
+      background: #e8c44a;
+      top: 60px; right: 14px;
+    }
+
+    /* Header */
+    .header-title {
+      font-family: 'Merriweather', Georgia, serif;
+      font-size: 30px;
+      font-weight: 900;
+      color: #1a7a7a;
+      text-align: center;
+      line-height: 1.2;
+    }
+
+    .header-slogan {
+      font-family: 'Merriweather', Georgia, serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: #c4652a;
+      text-align: center;
+      margin-top: 2px;
+      margin-bottom: 20px;
+    }
+
+    /* Preisübersicht Banner */
+    .preis-banner {
+      background: #d7ecec;
+      border-radius: 8px;
+      padding: 14px 20px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .preis-banner h2 {
+      font-family: 'Merriweather', Georgia, serif;
+      font-size: 22px;
+      color: #1a7a7a;
+      margin-bottom: 4px;
+    }
+
+    .preis-banner p {
+      font-size: 13px;
+      font-weight: 700;
+      color: #333;
+    }
+
+    /* Intro */
+    .intro {
+      text-align: center;
+      font-size: 13px;
+      color: #555;
+      margin-bottom: 22px;
+      line-height: 1.5;
+      padding: 0 10px;
+    }
+
+    /* Kurs-Karten */
+    .kurs-row {
+      display: flex;
+      align-items: center;
+      background: #fff;
+      border-radius: 10px;
+      padding: 16px 18px;
+      margin-bottom: 12px;
+      border-left: 4px solid;
+    }
+
+    .kurs-row.malkurs { border-color: #f5c9a8; background: #fef8f3; }
+    .kurs-row.schulvor { border-color: #a8d5ba; background: #f3faf6; }
+    .kurs-row.fremdsprachen { border-color: #a8d5d5; background: #f3fafa; }
+    .kurs-row.musik { border-color: #f5dfa8; background: #fefbf3; }
+    .kurs-row.theater { border-color: #a8c8e8; background: #f3f8fe; }
+    .kurs-row.kreativ { border-color: #c8e8a8; background: #f8fef3; }
+
+    .kurs-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-right: 14px;
+      flex-shrink: 0;
+    }
+
+    .malkurs .kurs-icon { background: #e8ddd5; }
+    .schulvor .kurs-icon { background: #d5e8de; }
+    .fremdsprachen .kurs-icon { background: #d5e8e8; }
+    .musik .kurs-icon { background: #e8e0c8; }
+    .theater .kurs-icon { background: #d5dfe8; }
+    .kreativ .kurs-icon { background: #dfe8d5; }
+
+    .kurs-info {
+      flex: 1;
+    }
+
+    .kurs-info h3 {
+      font-family: 'Merriweather', Georgia, serif;
+      font-size: 15px;
+      color: #1a7a7a;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+
+    .kurs-info p {
+      font-size: 12.5px;
+      color: #666;
+      line-height: 1.4;
+    }
+
+    .kurs-preis {
+      text-align: right;
+      flex-shrink: 0;
+      margin-left: 12px;
+    }
+
+    .kurs-preis .betrag {
+      font-size: 28px;
+      font-weight: 900;
+      color: #2d2d2d;
+    }
+
+    .kurs-preis .zeitraum {
+      font-size: 12px;
+      font-style: italic;
+      color: #c4652a;
+      font-weight: 600;
+    }
+
+    /* Hinweis */
+    .hinweis-box {
+      background: #fff;
+      border-radius: 10px;
+      padding: 16px 18px;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .hinweis-text h4 {
+      font-family: 'Merriweather', Georgia, serif;
+      font-size: 14px;
+      color: #c4652a;
+      margin-bottom: 3px;
+    }
+
+    .hinweis-text p {
+      font-size: 12.5px;
+      color: #555;
+      line-height: 1.4;
+    }
+
+    .hinweis-logo {
+      width: 70px;
+      flex-shrink: 0;
+    }
+
+    .hinweis-logo img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Anmeldung */
+    .anmeldung {
+      margin-top: 24px;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .anmeldung span.label {
+      color: #c4652a;
+    }
+
+    .anmeldung span.nummer {
+      color: #2d2d2d;
+    }
+
+    /* Kleine Deko */
+    .deko-dot {
+      position: absolute;
+      border-radius: 50%;
+    }
+    .deko1 { width: 10px; height: 10px; background: #d7ecec; bottom: 180px; left: 12px; }
+    .deko2 { width: 14px; height: 14px; background: #f5dfa8; bottom: 100px; right: 10px; }
+    .deko3 { width: 8px; height: 8px; background: #f5c9a8; bottom: 260px; right: 20px; }
+  </style>
+</head>
+<body>
+
+<div class="page">
+  <div class="deko-dot deko1"></div>
+  <div class="deko-dot deko2"></div>
+  <div class="deko-dot deko3"></div>
+
+  <!-- Header -->
+  <div class="header-title">Kinderparadies Hanau e.V.</div>
+  <div class="header-slogan">„Wachsen. Lernen. Lachen."</div>
+
+  <!-- Preisübersicht Banner -->
+  <div class="preis-banner">
+    <h2>Preisübersicht</h2>
+    <p>Pädagogische Kinderkurse - Monats- und Kurspreise</p>
+  </div>
+
+  <!-- Intro -->
+  <p class="intro">Unsere Kurse verbinden spielerisches Lernen, Kreativität und persönliche Förderung in kleinen Gruppen.</p>
+
+  <!-- Kurse -->
+  <div class="kurs-row malkurs">
+    <div class="kurs-icon">🎨</div>
+    <div class="kurs-info">
+      <h3>Malkurs / Kreative Kunst</h3>
+      <p>1 x pro Woche<br>60 Minuten</p>
+    </div>
+    <div class="kurs-preis">
+      <div class="betrag">25 €</div>
+      <div class="zeitraum">monatlich</div>
+    </div>
+  </div>
+
+  <div class="kurs-row schulvor">
+    <div class="kurs-icon">📚</div>
+    <div class="kurs-info">
+      <h3>Schulvorbereitung</h3>
+      <p>1 x pro Woche<br>2 Stunden</p>
+    </div>
+    <div class="kurs-preis">
+      <div class="betrag">100 €</div>
+      <div class="zeitraum">10 Einheiten</div>
+    </div>
+  </div>
+
+  <div class="kurs-row fremdsprachen">
+    <div class="kurs-icon">💬</div>
+    <div class="kurs-info">
+      <h3>Fremdsprachenkurs</h3>
+      <p>1 x pro Woche<br>60 Minuten</p>
+    </div>
+    <div class="kurs-preis">
+      <div class="betrag">25 €</div>
+      <div class="zeitraum">monatlich</div>
+    </div>
+  </div>
+
+  <div class="kurs-row musik">
+    <div class="kurs-icon">🎵</div>
+    <div class="kurs-info">
+      <h3>Musikalische Früherziehung</h3>
+      <p>1 x pro Woche</p>
+    </div>
+    <div class="kurs-preis">
+      <div class="betrag">30 €</div>
+      <div class="zeitraum">monatlich</div>
+    </div>
+  </div>
+
+  <div class="kurs-row theater">
+    <div class="kurs-icon">🎭</div>
+    <div class="kurs-info">
+      <h3>Theater-AG</h3>
+      <p>1 x pro Woche<br>60 Minuten</p>
+    </div>
+    <div class="kurs-preis">
+      <div class="betrag">30 €</div>
+      <div class="zeitraum">monatlich</div>
+    </div>
+  </div>
+
+  <div class="kurs-row kreativ">
+    <div class="kurs-icon">✂️</div>
+    <div class="kurs-info">
+      <h3>Kreativ-Workshop</h3>
+      <p>1 x pro Woche<br>60 Minuten</p>
+    </div>
+    <div class="kurs-preis">
+      <div class="betrag">5 €</div>
+      <div class="zeitraum">1 Stunde</div>
+    </div>
+  </div>
+
+  <!-- Hinweis -->
+  <div class="hinweis-box">
+    <div class="hinweis-text">
+      <h4>Hinweis</h4>
+      <p>Die Einteilung erfolgt altersgerecht und nach Verfügbarkeit.</p>
+    </div>
+    <div class="hinweis-logo">
+      <img src="logo.png" alt="Kinderparadies Hanau e.V.">
+    </div>
+  </div>
+
+  <!-- Anmeldung -->
+  <div class="anmeldung">
+    <span class="label">Anmeldung:</span> <span class="nummer">+49 176 41999804</span>
+  </div>
+
+</div>
+
+</body>
+</html>

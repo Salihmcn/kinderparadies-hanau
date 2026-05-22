@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kinderparadies Hanau e.V. – Pädagogische Kinderkurse in Hanau</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Kinderparadies Hanau e.V. – Pädagogische Kurse für Kinder ab 4 Jahren in Hanau. Malkurse, Schulvorbereitung, Fremdsprachen, Musikalische Früherziehung, Theater-AG und Kreativ-Workshops.">
+  <meta name="keywords" content="Kinderparadies Hanau, Kinderkurse Hanau, Malkurs Kinder Hanau, Schulvorbereitung Hanau, Fremdsprachen Kinder Hanau, Englisch Kinder Hanau, Russisch Kinder Hanau, Musikalische Früherziehung Hanau, Theater AG Kinder Hanau, Kreativ Workshop Kinder Hanau, Pädagogische Kurse Hanau, Kinderbetreuung Hanau, Nachmittagskurse Kinder Hanau, Bildungsverein Hanau, Kinderförderung Hanau, Nähkurs Kinder Hanau, Vorschule Hanau, Hafenplatz Hanau">
+  <meta name="author" content="Kinderparadies Hanau e.V.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://kinderparadies-hanau.de/">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kinderparadies Hanau e.V. – Pädagogische Kinderkurse">
+  <meta property="og:description" content="Ein Ort, an dem Kinder spielerisch lernen, entdecken und ihre Talente entwickeln. Kurse für Kinder ab 4 Jahren in Hanau.">
+  <meta property="og:url" content="https://kinderparadies-hanau.de/">
+  <meta property="og:image" content="https://kinderparadies-hanau.de/logo.png">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:site_name" content="Kinderparadies Hanau e.V.">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kinderparadies Hanau e.V. – Pädagogische Kinderkurse">
+  <meta name="twitter:description" content="Pädagogische Kurse für Kinder ab 4 Jahren in Hanau. Malkurse, Sprachen, Musik, Theater und mehr.">
+  <meta name="twitter:image" content="https://kinderparadies-hanau.de/logo.png">
+
+  <!-- Geo Tags -->
+  <meta name="geo.region" content="DE-HE">
+  <meta name="geo.placename" content="Hanau">
+
+  <!-- Structured Data / Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Kinderparadies Hanau e.V.",
+    "description": "Gemeinnütziger Bildungsverein mit pädagogischen Kursen für Kinder ab 4 Jahren in Hanau.",
+    "url": "https://kinderparadies-hanau.de",
+    "telephone": "+4917641999804",
+    "email": "kinderparadieshanau@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Hanau",
+      "addressRegion": "Hessen",
+      "addressCountry": "DE"
+    },
+    "sameAs": [],
+    "logo": "https://kinderparadies-hanau.de/logo.png",
+    "foundingDate": "2024",
+    "areaServed": {
+      "@type": "City",
+      "name": "Hanau"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Kursangebote",
+      "itemListElement": [
+        {"@type": "Course", "name": "Malkurs / Kreative Kunst", "description": "Kreativer Malkurs für Kinder, 1x pro Woche, 60 Minuten"},
+        {"@type": "Course", "name": "Schulvorbereitung", "description": "Vorschulkurs für Kinder von 5–7 Jahren, 1x pro Woche, 2 Stunden"},
+        {"@type": "Course", "name": "Fremdsprachenkurs", "description": "Englisch und Russisch für Kinder, spielerisch und kindgerecht"},
+        {"@type": "Course", "name": "Musikalische Früherziehung", "description": "Musikkurs für Kinder ab 4 Jahren, 1x pro Woche"},
+        {"@type": "Course", "name": "Theater-AG", "description": "Theaterkurs und Rollenspiele für Kinder, 1x pro Woche"},
+        {"@type": "Course", "name": "Kreativ-Workshop", "description": "Kreatives Basteln und Gestalten für Kinder, 1x pro Woche"},
+        {"@type": "Course", "name": "Nähkurs", "description": "Nähkurs für Kinder ab 8 Jahren"}
+      ]
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --teal: #1a7a7a;
+      --teal-light: #e8f4f4;
+      --teal-dark: #145f5f;
+      --orange: #c4652a;
+      --orange-light: #fdf0e8;
+      --white: #ffffff;
+      --gray-light: #f7f7f7;
+      --gray: #333333;
+      --gray-soft: #666666;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Open Sans', Arial, sans-serif;
+      color: var(--gray);
+      line-height: 1.6;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Merriweather', Georgia, serif;
+      color: var(--teal);
+    }
+
+    /* ===================== NAV ===================== */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: var(--white);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      z-index: 100;
+      padding: 0 40px;
+    }
+
+    .nav-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .nav-logo img {
+      height: 50px;
+    }
+
+    .nav-logo span {
+      font-family: 'Merriweather', Georgia, serif;
+      font-size: 18px;
+      font-weight: 900;
+      color: var(--teal);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--gray);
+      font-size: 14px;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--teal);
+    }
+
+    .nav-cta {
+      background: var(--orange);
+      color: var(--white) !important;
+      padding: 8px 20px;
+      border-radius: 6px;
+      transition: background 0.2s;
+    }
+
+    .nav-cta:hover {
+      background: var(--teal) !important;
+    }
+
+    .burger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+
+    .burger span {
+      width: 26px;
+      height: 3px;
+      background: var(--teal);
+      border-radius: 2px;
+      transition: 0.3s;
+    }
+
+    /* ===================== HERO ===================== */
+    .hero {
+      margin-top: 70px;
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, var(--teal-light) 0%, var(--white) 100%);
+      padding: 80px 40px 60px;
+      text-align: center;
+    }
+
+    .hero-content {
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+    .hero img.hero-logo {
+      width: 160px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    .hero .slogan {
+      font-family: 'Merriweather', Georgia, serif;
+      font-size: 22px;
+      color: var(--orange);
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 17px;
+      color: var(--gray-soft);
+      max-width: 580px;
+      margin: 0 auto 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--orange);
+      color: var(--white);
+      padding: 14px 36px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .btn:hover {
+      background: var(--teal);
+      transform: translateY(-2px);
+    }
+
+    /* ===================== COLLAGE ===================== */
+    .collage-section {
+      padding: 0;
+    }
+
+    .collage-section img {
+      width: 100%;
+      display: block;
+    }
+
+    /* ===================== SECTIONS ===================== */
+    section {
+      padding: 70px 40px;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-header h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .section-header p {
+      font-size: 16px;
+      color: var(--gray-soft);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* ===================== ÜBER UNS ===================== */
+    .ueber-uns {
+      background: var(--white);
+    }
+
+    .ueber-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .ueber-text h3 {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+
+    .ueber-text p {
+      margin-bottom: 14px;
+      font-size: 15px;
+      color: var(--gray-soft);
+    }
+
+    .info-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .badge {
+      background: var(--teal-light);
+      color: var(--teal);
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .ueber-image {
+      text-align: center;
+    }
+
+    .ueber-image img {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 12px;
+    }
+
+    /* ===================== KURSE ===================== */
+    .kurse {
+      background: var(--gray-light);
+    }
+
+    .kurse-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .kurs-card {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 28px 24px;
+      text-align: center;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .kurs-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+
+    .kurs-icon {
+      font-size: 40px;
+      margin-bottom: 14px;
+    }
+
+    .kurs-card h3 {
+      font-size: 17px;
+      margin-bottom: 8px;
+    }
+
+    .kurs-card .kurs-details {
+      font-size: 13px;
+      color: var(--gray-soft);
+      margin-bottom: 14px;
+    }
+
+    .kurs-price {
+      font-size: 26px;
+      font-weight: 900;
+      color: var(--teal);
+    }
+
+    .kurs-price small {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--gray-soft);
+    }
+
+    /* ===================== KURSPLAN ===================== */
+    .kursplan {
+      background: var(--white);
+    }
+
+    .plan-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 36px;
+    }
+
+    .tab-btn {
+      padding: 10px 28px;
+      border: 2px solid var(--teal);
+      background: var(--white);
+      color: var(--teal);
+      font-family: 'Open Sans', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    .tab-btn.active, .tab-btn:hover {
+      background: var(--teal);
+      color: var(--white);
+    }
+
+    .tab-content {
+      display: none;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    .tab-info {
+      text-align: center;
+      font-size: 14px;
+      color: var(--gray-soft);
+      margin-bottom: 20px;
+    }
+
+    .plan-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15px;
+    }
+
+    .plan-table th {
+      background: var(--teal);
+      color: var(--white);
+      padding: 12px 16px;
+      text-align: left;
+      font-weight: 700;
+    }
+
+    .plan-table th:first-child {
+      border-radius: 8px 0 0 0;
+    }
+
+    .plan-table th:last-child {
+      border-radius: 0 8px 0 0;
+    }
+
+    .plan-table td {
+      padding: 12px 16px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .plan-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .plan-table tr:nth-child(even) {
+      background: var(--teal-light);
+    }
+
+    /* ===================== VORTEILE ===================== */
+    .vorteile {
+      background: var(--teal);
+      color: var(--white);
+    }
+
+    .vorteile .section-header h2 {
+      color: var(--white);
+    }
+
+    .vorteile .section-header p {
+      color: rgba(255,255,255,0.75);
+    }
+
+    .vorteile-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .vorteil-card {
+      text-align: center;
+      padding: 24px;
+    }
+
+    .vorteil-icon {
+      font-size: 36px;
+      margin-bottom: 14px;
+    }
+
+    .vorteil-card h3 {
+      color: var(--white);
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    .vorteil-card p {
+      font-size: 14px;
+      color: rgba(255,255,255,0.8);
+    }
+
+    /* ===================== TEAM ===================== */
+    .team {
+      background: var(--gray-light);
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 30px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .team-card {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 32px 24px;
+      text-align: center;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+
+    .team-avatar {
+      width: 80px;
+      height: 80px;
+      background: var(--teal-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      margin: 0 auto 16px;
+    }
+
+    .team-card h3 {
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+
+    .team-card .role {
+      font-size: 13px;
+      color: var(--orange);
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .team-card p {
+      font-size: 13px;
+      color: var(--gray-soft);
+    }
+
+    /* ===================== STRUKTURELLES ===================== */
+    .strukturelles {
+      background: var(--orange-light);
+    }
+
+    .struktur-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .struktur-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 14px;
+    }
+
+    .struktur-item .check {
+      color: var(--teal);
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+
+    .hinweis {
+      text-align: center;
+      margin-top: 30px;
+      padding: 14px 24px;
+      background: var(--white);
+      border-left: 4px solid var(--orange);
+      border-radius: 6px;
+      font-size: 14px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ===================== KONTAKT / FOOTER ===================== */
+    .kontakt {
+      background: var(--teal-dark);
+      color: var(--white);
+      text-align: center;
+      padding: 60px 40px 40px;
+    }
+
+    .kontakt h2 {
+      color: var(--white);
+      font-size: 28px;
+      margin-bottom: 8px;
+    }
+
+    .kontakt p {
+      font-size: 16px;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 24px;
+    }
+
+    .kontakt-info {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+
+    .kontakt-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 16px;
+    }
+
+    .kontakt-item .icon {
+      font-size: 22px;
+    }
+
+    .kontakt .btn {
+      background: var(--orange);
+    }
+
+    .kontakt .btn:hover {
+      background: var(--white);
+      color: var(--teal);
+    }
+
+    .footer-bottom {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      font-size: 13px;
+      color: rgba(255,255,255,0.5);
+    }
+
+    /* ===================== RESPONSIVE ===================== */
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .burger { display: flex; }
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        padding: 20px 40px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      }
+
+      .hero h1 { font-size: 30px; }
+      .hero .slogan { font-size: 18px; }
+
+      .ueber-grid { grid-template-columns: 1fr; }
+      .kurse-grid { grid-template-columns: 1fr; }
+      .vorteile-grid { grid-template-columns: 1fr; }
+      .team-grid { grid-template-columns: 1fr; }
+      .struktur-grid { grid-template-columns: 1fr; }
+
+      .plan-tabs { flex-wrap: wrap; }
+
+      section { padding: 50px 20px; }
+      .hero { padding: 60px 20px 40px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">
+      <img src="logo.png" alt="Logo">
+      <span>Kinderparadies Hanau e.V.</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#ueber">Über uns</a></li>
+      <li><a href="#kurse">Kurse</a></li>
+      <li><a href="#kursplan">Kursplan</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="#kontakt" class="nav-cta">Anmelden</a></li>
+    </ul>
+    <button class="burger" onclick="document.getElementById('navLinks').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <img src="logo.png" alt="Kinderparadies Hanau e.V." class="hero-logo">
+    <h1>Kinderparadies Hanau e.V.</h1>
+    <div class="slogan">„Wachsen. Lernen. Lachen."</div>
+    <p>Ein Ort, an dem Kinder spielerisch lernen, entdecken und ihre Talente entwickeln. Pädagogische Kurse für Kinder ab 4 Jahren.</p>
+    <a href="#kontakt" class="btn">Jetzt anmelden</a>
+  </div>
+</section>
+
+<!-- COLLAGE -->
+<div class="collage-section">
+  <img src="collage.png" alt="Eindrücke aus dem Kinderparadies">
+</div>
+
+<!-- ÜBER UNS -->
+<section class="ueber-uns" id="ueber">
+  <div class="container">
+    <div class="section-header">
+      <h2>Willkommen im Kinderparadies</h2>
+      <p>Unser gemeinnütziger Bildungsverein in Hanau</p>
+    </div>
+    <div class="ueber-grid">
+      <div class="ueber-text">
+        <h3>Was wir bieten</h3>
+        <p>Das Kinderparadies Hanau e.V. ist ein gemeinnütziger Bildungsverein, der pädagogische Kurse für Kinder ab 4 Jahren anbietet. Unsere Kurse finden im Quartiersbüro Hafenplatz in Hanau statt.</p>
+        <p>In kleinen Gruppen mit maximal 12 Kindern fördern wir spielerisch Kreativität, Sprache und Selbstbewusstsein — begleitet von qualifiziertem Fachpersonal.</p>
+        <div class="info-badges">
+          <span class="badge">Ab 4 Jahren</span>
+          <span class="badge">Max. 12 Kinder</span>
+          <span class="badge">Qualifiziertes Personal</span>
+          <span class="badge">Materialien inklusive</span>
+        </div>
+      </div>
+      <div class="ueber-image">
+        <img src="logo.png" alt="Kinderparadies Logo">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KURSANGEBOTE -->
+<section class="kurse" id="kurse">
+  <div class="container">
+    <div class="section-header">
+      <h2>Unsere Kursangebote</h2>
+      <p>Pädagogische Kinderkurse – Monats- und Kurspreise</p>
+    </div>
+    <div class="kurse-grid">
+      <div class="kurs-card">
+        <div class="kurs-icon">🎨</div>
+        <h3>Malkurs / Kreative Kunst</h3>
+        <div class="kurs-details">1× pro Woche · 60 Minuten</div>
+        <div class="kurs-price">25 € <small>/ Monat</small></div>
+      </div>
+      <div class="kurs-card">
+        <div class="kurs-icon">📚</div>
+        <h3>Schulvorbereitung</h3>
+        <div class="kurs-details">1× pro Woche · 2 Stunden</div>
+        <div class="kurs-price">100 € <small>/ 10 Einheiten</small></div>
+      </div>
+      <div class="kurs-card">
+        <div class="kurs-icon">🌍</div>
+        <h3>Fremdsprachenkurs</h3>
+        <div class="kurs-details">1× pro Woche · 60 Minuten · verschiedene Sprachen</div>
+        <div class="kurs-price">25 € <small>/ Monat</small></div>
+      </div>
+      <div class="kurs-card">
+        <div class="kurs-icon">🎵</div>
+        <h3>Musikalische Frühförderung</h3>
+        <div class="kurs-details">1× pro Woche</div>
+        <div class="kurs-price">30 € <small>/ Monat</small></div>
+      </div>
+      <div class="kurs-card">
+        <div class="kurs-icon">🎭</div>
+        <h3>Theater-AG</h3>
+        <div class="kurs-details">1× pro Woche · 60 Minuten</div>
+        <div class="kurs-price">30 € <small>/ Monat</small></div>
+      </div>
+      <div class="kurs-card">
+        <div class="kurs-icon">✂️</div>
+        <h3>Kreativ-Workshop</h3>
+        <div class="kurs-details">1× pro Woche · 60 Minuten</div>
+        <div class="kurs-price">5 € <small>/ Stunde</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KURSPLAN -->
+<section class="kursplan" id="kursplan">
+  <div class="container">
+    <div class="section-header">
+      <h2>Kursplan</h2>
+      <p>Unsere Kurse finden an drei Tagen pro Woche statt</p>
+    </div>
+
+    <div class="plan-tabs">
+      <button class="tab-btn active" onclick="showTab('donnerstag')">Donnerstag</button>
+      <button class="tab-btn" onclick="showTab('freitag')">Freitag</button>
+      <button class="tab-btn" onclick="showTab('samstag')">Samstag</button>
+    </div>
+
+    <!-- Donnerstag -->
+    <div class="tab-content active" id="donnerstag">
+      <div class="tab-info">15:00 – 19:00 Uhr</div>
+      <table class="plan-table">
+        <thead>
+          <tr><th>Zeit</th><th>Angebot</th><th>Zielgruppe</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>15:00 – 15:45</td><td>Malkurs</td><td>4 – 8 Jahre</td></tr>
+          <tr><td>16:00 – 17:45</td><td>Vorschule</td><td>5 – 7 Jahre</td></tr>
+          <tr><td>18:00 – 18:45</td><td>Kreativ-Workshop</td><td>4 – 12 Jahre</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Freitag -->
+    <div class="tab-content" id="freitag">
+      <div class="tab-info">15:00 – 19:00 Uhr</div>
+      <table class="plan-table">
+        <thead>
+          <tr><th>Zeit</th><th>Angebot</th><th>Zielgruppe</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>15:00 – 15:45</td><td>Englisch 1</td><td>4 – 6 Jahre</td></tr>
+          <tr><td>16:00 – 16:45</td><td>Englisch 2</td><td>7 – 12 Jahre</td></tr>
+          <tr><td>17:00 – 18:30</td><td>Russisch</td><td>7 – 12 Jahre</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Samstag -->
+    <div class="tab-content" id="samstag">
+      <div class="tab-info">09:00 – 15:00 Uhr</div>
+      <table class="plan-table">
+        <thead>
+          <tr><th>Zeit</th><th>Angebot</th><th>Zielgruppe</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>09:00 – 10:00</td><td>Nähkurs</td><td>8 – 14 Jahre</td></tr>
+          <tr><td>10:00 – 10:45</td><td>Malkurs</td><td>8 – 14 Jahre</td></tr>
+          <tr><td>11:00 – 12:45</td><td>Russisch</td><td>4 – 7 Jahre</td></tr>
+          <tr><td>13:00 – 13:45</td><td>Musikalische Früherziehung</td><td>4 – 7 Jahre</td></tr>
+          <tr><td>14:00 – 14:45</td><td>Theater AG</td><td>5 – 12 Jahre</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- VORTEILE -->
+<section class="vorteile">
+  <div class="container">
+    <div class="section-header">
+      <h2>Warum Kinderparadies Hanau e.V.?</h2>
+      <p>Was uns besonders macht</p>
+    </div>
+    <div class="vorteile-grid">
+      <div class="vorteil-card">
+        <div class="vorteil-icon">💛</div>
+        <h3>Spielerisches &amp; liebevolles Lernen</h3>
+        <p>Kinder entdecken ihre Talente in einer warmen, motivierenden Atmosphäre.</p>
+      </div>
+      <div class="vorteil-card">
+        <div class="vorteil-icon">👩‍🏫</div>
+        <h3>Pädagogische Betreuung</h3>
+        <p>Qualifiziertes Fachpersonal begleitet jede Kurseinheit.</p>
+      </div>
+      <div class="vorteil-card">
+        <div class="vorteil-icon">🌏</div>
+        <h3>Interkulturelle Werte</h3>
+        <p>Vielfalt und Respekt stehen im Mittelpunkt unserer Arbeit.</p>
+      </div>
+      <div class="vorteil-card">
+        <div class="vorteil-icon">💬</div>
+        <h3>Förderung von Sprache</h3>
+        <p>Sprachkompetenz wird spielerisch in verschiedenen Sprachen gestärkt.</p>
+      </div>
+      <div class="vorteil-card">
+        <div class="vorteil-icon">🎨</div>
+        <h3>Kreativität entfalten</h3>
+        <p>Kunst, Musik und Theater fördern die kreative Entwicklung.</p>
+      </div>
+      <div class="vorteil-card">
+        <div class="vorteil-icon">💪</div>
+        <h3>Selbstbewusstsein stärken</h3>
+        <p>Kinder wachsen an ihren Aufgaben und gewinnen Vertrauen in sich selbst.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="team" id="team">
+  <div class="container">
+    <div class="section-header">
+      <h2>Unser Team</h2>
+      <p>Qualifiziert, engagiert und mit Herz dabei</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-avatar">👩‍🏫</div>
+        <h3>Nihal Özdemir</h3>
+        <div class="role">Leitung</div>
+        <p>Staatlich anerkannte Erzieherin</p>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">👩‍💼</div>
+        <h3>Ekaterina Bersch</h3>
+        <div class="role">Zweite Leitung</div>
+        <p>Sozialarbeiterin</p>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar">👩‍🎨</div>
+        <h3>Alla Arnold</h3>
+        <div class="role">Kursleiterin / Erzieherin</div>
+        <p>Erzieherin</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STRUKTURELLES -->
+<section class="strukturelles">
+  <div class="container">
+    <div class="section-header">
+      <h2>Gut zu wissen</h2>
+      <p>Wichtige Informationen rund um unsere Kurse</p>
+    </div>
+    <div class="struktur-grid">
+      <div class="struktur-item">
+        <span class="check">✔</span>
+        <span>Pädagogisch begleitet durch qualifiziertes Fachpersonal</span>
+      </div>
+      <div class="struktur-item">
+        <span class="check">✔</span>
+        <span>Teilnahme nur nach Anmeldung</span>
+      </div>
+      <div class="struktur-item">
+        <span class="check">✔</span>
+        <span>Einhaltung des Hygiene- und Schutzkonzeptes der Stadt Hanau</span>
+      </div>
+      <div class="struktur-item">
+        <span class="check">✔</span>
+        <span>Aufsichtspflicht liegt bei der Kursleitung</span>
+      </div>
+      <div class="struktur-item">
+        <span class="check">✔</span>
+        <span>Materialien werden gestellt</span>
+      </div>
+      <div class="struktur-item">
+        <span class="check">✔</span>
+        <span>Max. 12 Kinder pro Gruppe</span>
+      </div>
+    </div>
+    <div class="hinweis">
+      In den Schulferien, an gesetzlichen Feiertagen und Brückentagen finden keine Kurse statt.
+    </div>
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<section class="kontakt" id="kontakt">
+  <h2>Jetzt anmelden</h2>
+  <p>Wir freuen uns auf Ihr Kind!</p>
+  <div class="kontakt-info">
+    <div class="kontakt-item">
+      <span class="icon">📞</span>
+      <span>0176 41 999 804</span>
+    </div>
+    <div class="kontakt-item">
+      <span class="icon">✉️</span>
+      <span>kinderparadieshanau@gmail.com</span>
+    </div>
+  </div>
+  <a href="tel:+4917641999804" class="btn">Jetzt anrufen</a>
+  <div class="footer-bottom">
+    &copy; 2025 Kinderparadies Hanau e.V.. Alle Rechte vorbehalten.
+  </div>
+</section>
+
+<script>
+  function showTab(day) {
+    document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById(day).classList.add('active');
+    event.target.classList.add('active');
+  }
+</script>
+
+</body>
+</html>

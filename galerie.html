@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie – Kinderparadies Hanau e.V. | Eindrücke aus unseren Kursen</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Galerie des Kinderparadies Hanau e.V. – Eindrücke aus unseren Malkursen, Sprachkursen, Theater-AG und weiteren pädagogischen Kinderkursen in Hanau.">
+  <meta name="keywords" content="Kinderparadies Hanau Galerie, Kinderkurse Hanau Fotos, Malkurs Kinder Hanau Bilder, Pädagogische Kurse Hanau Eindrücke">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://kinderparadies-hanau.de/galerie.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Galerie – Kinderparadies Hanau e.V.">
+  <meta property="og:description" content="Eindrücke aus unseren Kursen und Veranstaltungen im Kinderparadies Hanau.">
+  <meta property="og:url" content="https://kinderparadies-hanau.de/galerie.html">
+  <meta property="og:image" content="https://kinderparadies-hanau.de/collage.png">
+  <meta property="og:locale" content="de_DE">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --teal: #1a7a7a;
+      --teal-light: #e8f4f4;
+      --teal-dark: #145f5f;
+      --orange: #c4652a;
+      --white: #ffffff;
+      --gray-light: #f7f7f7;
+      --gray: #333333;
+      --gray-soft: #666666;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', Arial, sans-serif;
+      color: var(--gray);
+      line-height: 1.6;
+      background: var(--gray-light);
+    }
+
+    h1, h2, h3 {
+      font-family: 'Merriweather', Georgia, serif;
+      color: var(--teal);
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: var(--white);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      z-index: 100;
+      padding: 0 40px;
+    }
+
+    .nav-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .nav-logo img {
+      height: 50px;
+    }
+
+    .nav-logo span {
+      font-family: 'Merriweather', Georgia, serif;
+      font-size: 18px;
+      font-weight: 900;
+      color: var(--teal);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--gray);
+      font-size: 14px;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--teal);
+    }
+
+    .nav-links a.active-link {
+      color: var(--teal);
+    }
+
+    .nav-cta {
+      background: var(--orange);
+      color: var(--white) !important;
+      padding: 8px 20px;
+      border-radius: 6px;
+      transition: background 0.2s;
+    }
+
+    .nav-cta:hover {
+      background: var(--teal) !important;
+    }
+
+    .burger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+
+    .burger span {
+      width: 26px;
+      height: 3px;
+      background: var(--teal);
+      border-radius: 2px;
+    }
+
+    /* HERO */
+    .page-hero {
+      margin-top: 70px;
+      background: linear-gradient(135deg, var(--teal-light) 0%, var(--white) 100%);
+      text-align: center;
+      padding: 60px 40px 50px;
+    }
+
+    .page-hero h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .page-hero p {
+      font-size: 16px;
+      color: var(--gray-soft);
+    }
+
+    /* GALERIE */
+    .galerie {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+
+    .galerie-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .galerie-item {
+      border-radius: 10px;
+      overflow: hidden;
+      cursor: pointer;
+      position: relative;
+      aspect-ratio: 4/3;
+      background: #ddd;
+    }
+
+    .galerie-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s;
+    }
+
+    .galerie-item:hover img {
+      transform: scale(1.05);
+    }
+
+    /* Platzhalter wenn noch keine Fotos da sind */
+    .galerie-placeholder {
+      border: 3px dashed #ccc;
+      border-radius: 10px;
+      aspect-ratio: 4/3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #aaa;
+      font-size: 14px;
+      text-align: center;
+      padding: 20px;
+      background: var(--white);
+    }
+
+    .galerie-placeholder .plus {
+      font-size: 40px;
+      color: #ccc;
+      margin-bottom: 8px;
+    }
+
+    /* LIGHTBOX */
+    .lightbox {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.9);
+      z-index: 200;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .lightbox.open {
+      display: flex;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90vh;
+      border-radius: 8px;
+      box-shadow: 0 4px 30px rgba(0,0,0,0.5);
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: white;
+      font-size: 36px;
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    /* FOOTER */
+    .footer {
+      background: var(--teal-dark);
+      color: var(--white);
+      text-align: center;
+      padding: 30px 40px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.6);
+    }
+
+    .footer a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: var(--white);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .burger { display: flex; }
+      .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        padding: 20px 40px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      }
+      .galerie-grid { grid-template-columns: 1fr 1fr; }
+      .page-hero { padding: 50px 20px 40px; }
+      .page-hero h1 { font-size: 28px; }
+    }
+
+    @media (max-width: 480px) {
+      .galerie-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="logo.png" alt="Logo">
+      <span>Kinderparadies Hanau e.V.</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Startseite</a></li>
+      <li><a href="index.html#kurse">Kurse</a></li>
+      <li><a href="index.html#kursplan">Kursplan</a></li>
+      <li><a href="index.html#team">Team</a></li>
+      <li><a href="galerie.html" class="active-link">Galerie</a></li>
+      <li><a href="index.html#kontakt" class="nav-cta">Anmelden</a></li>
+    </ul>
+    <button class="burger" onclick="document.getElementById('navLinks').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <h1>Unsere Galerie</h1>
+  <p>Eindrücke aus unseren Kursen und Veranstaltungen</p>
+</div>
+
+<!-- GALERIE -->
+<div class="galerie">
+  <div class="galerie-grid" id="galerieGrid">
+    <!-- Fotos werden automatisch aus fotos.json geladen -->
+  </div>
+  <p id="leerHinweis" style="text-align:center; color:#aaa; padding:60px 20px; display:none;">
+    Noch keine Fotos vorhanden. Fotos werden automatisch angezeigt sobald sie im galerie/ Ordner hochgeladen werden.
+  </p>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <span class="lightbox-close">&times;</span>
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <p><a href="index.html">Zurück zur Startseite</a></p>
+  <p style="margin-top: 10px;">&copy; 2025 Kinderparadies Hanau e.V.. Alle Rechte vorbehalten.</p>
+</div>
+
+<script>
+  // Fotos automatisch aus fotos.json laden
+  fetch('fotos.json')
+    .then(function(res) { return res.json(); })
+    .then(function(fotos) {
+      var grid = document.getElementById('galerieGrid');
+      if (fotos.length === 0) {
+        document.getElementById('leerHinweis').style.display = 'block';
+        return;
+      }
+      fotos.forEach(function(foto) {
+        var div = document.createElement('div');
+        div.className = 'galerie-item';
+        div.onclick = function() { openLightbox(this); };
+        var img = document.createElement('img');
+        img.src = 'galerie/' + foto;
+        img.alt = 'Kinderparadies Hanau - ' + foto;
+        img.loading = 'lazy';
+        div.appendChild(img);
+        grid.appendChild(div);
+      });
+    })
+    .catch(function() {
+      document.getElementById('leerHinweis').style.display = 'block';
+    });
+
+  function openLightbox(el) {
+    var img = el.querySelector('img');
+    document.getElementById('lightbox-img').src = img.src;
+    document.getElementById('lightbox').classList.add('open');
+  }
+
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+  }
+</script>
+
+</body>
+</html>
